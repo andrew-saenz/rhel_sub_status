@@ -1,0 +1,7 @@
+---
+- hosts: EBS-DEV
+  gather_facts: false
+
+  tasks:
+  - name: Check Subscription Status
+    command: 'subscription-manager status'
